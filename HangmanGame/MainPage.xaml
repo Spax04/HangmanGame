@@ -10,48 +10,188 @@
 
     <Grid>
         <Grid.Background>
-            <ImageBrush ImageSource="/Assets/Desk.jpg"/>
+            <ImageBrush ImageSource="/Assets/png-transparent-blackboards-and-blackboard-sassafras-teachers-day-school.png"/>
         </Grid.Background>
-        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,995,0,0" VerticalAlignment="Top" Width="650" Fill="White"/>
-        <Rectangle Height="10" Margin="1330,553,-285,0" VerticalAlignment="Top" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1335,895,0,0" VerticalAlignment="Top" Width="450" Fill="White"/>
+        <Rectangle Height="10" Margin="1369,498,-244,0" VerticalAlignment="Top" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="89.533"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,125,0,0" VerticalAlignment="Top" Width="650" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB"/>
-        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1095,181,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1350,125,0,0" VerticalAlignment="Top" Width="435" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="0.035"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1305,181,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="89.971"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Ellipse HorizontalAlignment="Left" Height="130" Margin="1090,225,0,0" VerticalAlignment="Top" Width="115">
+        <Ellipse HorizontalAlignment="Left" Height="130" Margin="1305,225,0,0" VerticalAlignment="Top" Width="115">
             <Ellipse.Fill>
                 <ImageBrush ImageSource="/Assets/elipse.png"/>
             </Ellipse.Fill>
         </Ellipse>
-        <Rectangle HorizontalAlignment="Left" Height="20" Margin="1017,458,0,0" VerticalAlignment="Top" Width="265" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="20" Margin="1232,458,0,0" VerticalAlignment="Top" Width="265" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="89.971"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1060,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1275,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="120.261"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1350,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="54.101"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1124,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1339,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="54.101"/>
             </Rectangle.RenderTransform>
         </Rectangle>
-        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1039,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1254,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
             <Rectangle.RenderTransform>
                 <CompositeTransform Rotation="121.676"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Button x:Name="btnA" Content="A" Margin="107,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="1.094" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnB" Margin="242,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="B">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-3.774" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnC" Content="C" Margin="382,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-3.774" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnD" Margin="532,87,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="D">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="4.131" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnE" Margin="662,97,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="E">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="4.131" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnF" Margin="777,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="F">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-0.815" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnG" Margin="102,222,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="G">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-6.138" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnH" Content="H" Margin="237,217,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="1.094" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnI" Content="I" Margin="372,217,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-1.646" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnJ" Content="J" Margin="502,212,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-2.638" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnK" Margin="632,212,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="K">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-0.93" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnL" Margin="762,217,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="L">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="1.574" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnM" Content="M" Margin="102,342,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-2.014" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnN" Content="N" Margin="232,342,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="0.239" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnO" Content="O" Margin="372,342,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="4.459" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnT" Content="T" Margin="232,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="1.558" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnS" Content="S" Margin="102,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-1.646" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnR" Content="R" Margin="762,337,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="1.094" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnQ" Margin="627,337,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="Q">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-6.138" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnP" Margin="507,342,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="Button_Click" Content="P">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="4.131" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnU" Content="U" Margin="362,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-2.638" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnV" Content="V" Margin="502,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.663" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnW" Content="W" Margin="632,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-2.638" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnX" Content="X" Margin="767,477,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="3.225" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnY" Content="Y" Margin="367,592,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="3.225" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <Button x:Name="btnZ" Content="Z" Margin="497,592,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="-2.734" TranslateX="0.764" TranslateY="0.094"/>
+            </Button.RenderTransform>
+        </Button>
+        <TextBlock HorizontalAlignment="Left" Margin="255,791,0,0" TextWrapping="Wrap" Text="A _ _ _ _ _ T" VerticalAlignment="Top" Height="141" Width="436" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="72" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center"/>
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1573,223,0,0" VerticalAlignment="Top" Width="242" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="54.101"/>
             </Rectangle.RenderTransform>
         </Rectangle>
 
