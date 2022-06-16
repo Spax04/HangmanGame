@@ -13,40 +13,47 @@ namespace HangmanGame
         MediumWord mediumWord;
         StringBuilder result;
         GameMananger gameMananger;
-        
+        private string final;
+
 
         public GameStart(int lvlChose)
         {
-            gameMananger = new GameMananger();
+            
+            gameMananger = new GameMananger(); //Added to display a lvl Chose
             easyWord = new EasyWord(random.Next(3, 5));
             mediumWord = new MediumWord(random.Next(5, 7));
 
             if(lvlChose == gameMananger.EasyLvlChose)
             {
-                resultStartSet(easyWord);
-                
-            }else if(lvlChose == gameMananger.MediumLvlChose)
+                result = resultStartSet(easyWord);
+                final = result.ToString();
+            }
+            else if(lvlChose == gameMananger.MediumLvlChose)
             {
-                resultStartSet(mediumWord);
+                result = resultStartSet(mediumWord);
+                final=result.ToString();
             }
         }
 
         
 
-        public void resultStartSet(WordClass word)
+        public StringBuilder resultStartSet(WordClass word)
         {
-            result = new StringBuilder(word.Word.Length);
-            for (int i = 0; i < result.Length * 2; i++)
+           StringBuilder sb = new StringBuilder(word.Word.Length*2);
+            for (int i = 0; i < sb.Length; i++)
             {
                 if(i % 2 == 0)
                 {
-                    result[i] = '_';
+                    sb.Insert(i,"_");
                 }
                 else
                 {
-                    result[i] = ' ';
+                    sb.Insert(i, " ");
                 }
             }
+            return sb;
         } 
+        public string Final { get { return final; } }
+        public StringBuilder Result { get { return result; } }
     }
 }

@@ -33,8 +33,9 @@ namespace HangmanGame
 
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
-            gameMananger = new GameMananger();
-            gameStart = new GameStart(gameMananger.EasyLvlChose);
+            /* gameMananger = new GameMananger();
+             gameStart = new GameStart(gameMananger.EasyLvlChose);*/
+            Start();
             removeGameMenu();
         }
 
@@ -54,6 +55,12 @@ namespace HangmanGame
             myCanvas.Children.Remove(gameStartTitle);
         }
 
+        public void Start()
+        {
+            gameMananger = new GameMananger();
+            gameStart = new GameStart(gameMananger.EasyLvlChose);
+            reultTextBlock.Text = gameStart.Final;
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 

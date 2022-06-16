@@ -33,6 +33,6 @@ namespace HangmanGame
 
         public char[] Word { get { return _word; } set { _word = value; } }
 
-        
+        public int Length { get; internal set; }
     }
 }
