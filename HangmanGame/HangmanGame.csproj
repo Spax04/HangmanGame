@@ -119,14 +119,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="GameBoard.cs" />
-    <Compile Include="Levels\EasyLvlWord.cs" />
-    <Compile Include="Levels\HardLvlWord.cs" />
+    <Compile Include="GameMananger.cs" />
+    <Compile Include="GameStart.cs" />
+    <Compile Include="Levels\EasyWord.cs" />
+    <Compile Include="Levels\MediumWord.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Word.cs" />
+    <Compile Include="WordClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -135,8 +136,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Desk.jpg" />
+    <Content Include="Assets\difficult.png" />
     <Content Include="Assets\doska3.jpg" />
     <Content Include="Assets\elipse.png" />
+    <Content Include="Assets\gamestart.png" />
     <Content Include="Assets\png-transparent-blackboards-and-blackboard-sassafras-teachers-day-school.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

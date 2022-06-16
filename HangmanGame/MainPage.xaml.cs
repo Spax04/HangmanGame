@@ -23,14 +23,35 @@ namespace HangmanGame
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        GameStart gameStart;
+        GameMananger gameMananger;
         public MainPage()
         {
             this.InitializeComponent();
-            Word word = new Word(3);
-
-            word.addChareToWord("DOG");
-
             
+        }
+
+        private void easyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            gameMananger = new GameMananger();
+            gameStart = new GameStart(gameMananger.EasyLvlChose);
+            removeGameMenu();
+        }
+
+        private void mediumBtn_Click(object sender, RoutedEventArgs e)
+        {
+            gameMananger = new GameMananger();
+            gameStart = new GameStart(gameMananger.MediumLvlChose);
+            removeGameMenu();
+        }
+
+        private void removeGameMenu()
+        {
+            myCanvas.Children.Remove(gameStartDifLvl);
+            myCanvas.Children.Remove(gameStartRec);
+            myCanvas.Children.Remove(easyBtn);
+            myCanvas.Children.Remove(mediumBtn);
+            myCanvas.Children.Remove(gameStartTitle);
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
