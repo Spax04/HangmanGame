@@ -1,0 +1,59 @@
+﻿<Page
+    x:Class="HangmanGame.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HangmanGame"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/Assets/Desk.jpg"/>
+        </Grid.Background>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,995,0,0" VerticalAlignment="Top" Width="650" Fill="White"/>
+        <Rectangle Height="10" Margin="1330,553,-285,0" VerticalAlignment="Top" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="89.533"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,125,0,0" VerticalAlignment="Top" Width="650" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB"/>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1095,181,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="89.971"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Ellipse HorizontalAlignment="Left" Height="130" Margin="1090,225,0,0" VerticalAlignment="Top" Width="115">
+            <Ellipse.Fill>
+                <ImageBrush ImageSource="/Assets/elipse.png"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Rectangle HorizontalAlignment="Left" Height="20" Margin="1017,458,0,0" VerticalAlignment="Top" Width="265" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="89.971"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1060,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="120.261"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="1135,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="54.101"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1124,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="54.101"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+        <Rectangle HorizontalAlignment="Left" Height="12" Margin="1039,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle.RenderTransform>
+                <CompositeTransform Rotation="121.676"/>
+            </Rectangle.RenderTransform>
+        </Rectangle>
+
+    </Grid>
+</Page>
