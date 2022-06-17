@@ -31,7 +31,9 @@ namespace HangmanGame
             }
         }
 
-        public char[] Word { get { return _word; } set { _word = value; } }
+        public char[] Word { get { return _word; } set { _word = value; } }// Delite???
+ 
+    
 
         public int Length { get; internal set; }
     }

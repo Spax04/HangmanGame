@@ -139,8 +139,13 @@
     <Content Include="Assets\difficult.png" />
     <Content Include="Assets\doska3.jpg" />
     <Content Include="Assets\elipse.png" />
+    <Content Include="Assets\gameOver.png" />
     <Content Include="Assets\gamestart.png" />
+    <Content Include="Assets\HANGMAN.png" />
+    <Content Include="Assets\myGametitle.png" />
+    <Content Include="Assets\playAgainTitle.png" />
     <Content Include="Assets\png-transparent-blackboards-and-blackboard-sassafras-teachers-day-school.png" />
+    <Content Include="Assets\youWon.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
