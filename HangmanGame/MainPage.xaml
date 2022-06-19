@@ -13,50 +13,50 @@
             <Canvas.Background>
                 <ImageBrush ImageSource="/Assets/png-transparent-blackboards-and-blackboard-sassafras-teachers-day-school.png"/>
             </Canvas.Background>
-            <Rectangle x:Name="missOne" HorizontalAlignment="Left" Height="10" Margin="1335,895,0,0" VerticalAlignment="Top" Width="450" Fill="White"/>
+            <Rectangle x:Name="missOne" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="257" Fill="White" Canvas.Left="959" Canvas.Top="648"/>
             <Rectangle Height="10" Margin="1369,498,-244,0" VerticalAlignment="Top" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="89.533"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missThree1" HorizontalAlignment="Left" Height="10" Margin="1350,125,0,0" VerticalAlignment="Top" Width="435" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missThree1" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="248" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="967.999" Canvas.Top="273.965">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="0.035"/>
+                    <CompositeTransform Rotation="0.03" SkewX="-0.011"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missFour" HorizontalAlignment="Left" Height="10" Margin="1305,181,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missFour" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="63" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="942.365" Canvas.Top="301.187">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="89.971"/>
+                    <CompositeTransform Rotation="89.966" SkewX="-0.009" ScaleX="0.853" ScaleY="1.172"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Ellipse x:Name="missFive" HorizontalAlignment="Left" Height="130" Margin="1305,225,0,0" VerticalAlignment="Top" Width="115">
+            <Ellipse x:Name="missFive" HorizontalAlignment="Left" Height="63" VerticalAlignment="Top" Width="66" Canvas.Left="942" Canvas.Top="323">
                 <Ellipse.Fill>
                     <ImageBrush ImageSource="/Assets/elipse.png"/>
                 </Ellipse.Fill>
             </Ellipse>
-            <Rectangle x:Name="missSix" HorizontalAlignment="Left" Height="20" Margin="1232,458,0,0" VerticalAlignment="Top" Width="265" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missSix" HorizontalAlignment="Left" Height="10" VerticalAlignment="Top" Width="151" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="900.78" Canvas.Top="435.833">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="89.971"/>
+                    <CompositeTransform Rotation="89.966" SkewX="-0.009" ScaleX="0.853" ScaleY="1.172"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missSeven" HorizontalAlignment="Left" Height="10" Margin="1275,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missSeven" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="63" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="925.275" Canvas.Top="408.126">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="120.261"/>
+                    <CompositeTransform Rotation="116.467" SkewY="7.895" ScaleX="0.884" ScaleY="1.131"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missEight" HorizontalAlignment="Left" Height="10" Margin="1350,401,0,0" VerticalAlignment="Top" Width="110" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missEight" HorizontalAlignment="Left" Height="5" VerticalAlignment="Top" Width="63" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="967.998" Canvas.Top="408.126">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="54.101"/>
+                    <CompositeTransform Rotation="49.693" SkewX="-8.605" ScaleX="0.906" ScaleY="1.103"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missTen" HorizontalAlignment="Left" Height="12" Margin="1339,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missTen" HorizontalAlignment="Left" Height="6" VerticalAlignment="Top" Width="81" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="961.732" Canvas.Top="525.759">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="54.101"/>
+                    <CompositeTransform Rotation="49.693" SkewX="-8.605" ScaleX="0.906" ScaleY="1.103"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="missNine" HorizontalAlignment="Left" Height="12" Margin="1254,643,0,0" VerticalAlignment="Top" Width="142" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+            <Rectangle x:Name="missNine" HorizontalAlignment="Left" Height="6" VerticalAlignment="Top" Width="81" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="913.313" Canvas.Top="525.759">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="121.676"/>
+                    <CompositeTransform Rotation="117.768" SkewY="8.103" ScaleX="0.887" ScaleY="1.127"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
             <Button x:Name="btnA" Content="A" Margin="107,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Click="btnA_Click">
@@ -189,29 +189,29 @@
                     <CompositeTransform Rotation="-2.734" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="197" Width="692" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="72" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="447" Canvas.Top="817" Text=""/>
-            <Rectangle x:Name="missThree" HorizontalAlignment="Left" Height="15" VerticalAlignment="Top" Width="271" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="1565.975" Canvas.Top="234.246">
+            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="105" Width="336" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="48" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="897" Canvas.Top="125"/>
+            <Rectangle x:Name="missThree" HorizontalAlignment="Left" Height="7" VerticalAlignment="Top" Width="154" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="1091.027" Canvas.Top="327.069">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="54.101"/>
+                    <CompositeTransform Rotation="49.693" SkewX="-8.605" ScaleX="0.906" ScaleY="1.103"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="gameRec" HorizontalAlignment="Left" Height="845" VerticalAlignment="Top" Width="1239" Fill="#FF258EB1" Canvas.Left="216" Canvas.Top="182" RadiusX="166" RadiusY="166" FocusVisualSecondaryBrush="White" Stroke="Black"/>
-            <Rectangle x:Name="missTwo" Height="11" Width="790" Fill="White" Canvas.Left="1388" Canvas.Top="504.712" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" RadiusX="0" RadiusY="0">
+            <Rectangle x:Name="gameRec" HorizontalAlignment="Left" Height="361" VerticalAlignment="Top" Width="670" Fill="#FF258EB1" Canvas.Left="125" Canvas.Top="200" RadiusX="166" RadiusY="166" FocusVisualSecondaryBrush="White" Stroke="Black"/>
+            <Rectangle x:Name="missTwo" Height="5" Width="450" Fill="White" Canvas.Left="989.645" Canvas.Top="458.539" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" RadiusX="0" RadiusY="0">
                 <Rectangle.RenderTransform>
-                    <CompositeTransform Rotation="90.097"/>
+                    <CompositeTransform Rotation="90.083" SkewY="0.031" ScaleX="0.853" ScaleY="1.172"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Image x:Name="gameStartTitle" Height="357" Canvas.Left="309" Canvas.Top="248" Width="1053" Source="/Assets/gamestart.png" Stretch="Uniform"/>
-            <Image x:Name="gameStartDifLvl" Height="192" Canvas.Left="524" Canvas.Top="509" Width="625" Source="/Assets/difficult.png"/>
-            <Button x:Name="easyBtn" Content="EASY" Canvas.Left="389" Canvas.Top="765" Background="#FF1EE017" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="easyBtn_Click" Height="140" Width="251" VerticalAlignment="Top"/>
-            <Button x:Name="mediumBtn" Content="MEDIUM" Canvas.Left="736" Canvas.Top="765" Background="#FFBFDE07" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="mediumBtn_Click" Height="140" Width="261" VerticalAlignment="Top"/>
-            <TextBlock x:Name="txtBlock" Canvas.Left="1225" TextWrapping="Wrap" Text="1" Canvas.Top="113" Height="90" Width="65" FontSize="48"/>
-            <TextBlock x:Name="txtBlock1" Canvas.Left="1059" TextWrapping="Wrap" Text="1" Canvas.Top="113" Height="90" Width="65" FontSize="48" HorizontalAlignment="Left" VerticalAlignment="Center"/>
-            <Image x:Name="gameOvetTxt" Height="193" Canvas.Left="447" Width="767" Source="/Assets/gameOver.png" Stretch="Uniform" Canvas.Top="248"/>
-            <Image x:Name="myTitle" Height="100" Canvas.Left="736" Canvas.Top="931" Width="584" Source="/Assets/myGametitle.png"/>
-            <Image x:Name="hangmanTitle" Height="100" Canvas.Left="504" Canvas.Top="225" Width="664" Source="/Assets/HANGMAN.png"/>
-            <Image x:Name="playAgainTitle" Height="100" Canvas.Left="484" Canvas.Top="427" Width="684" Source="/Assets/playAgainTitle.png"/>
-            <Image x:Name="winTitle" Height="105" Canvas.Left="447" Canvas.Top="290" Width="767" Source="/Assets/youWon.png"/>
+            <Image x:Name="gameStartTitle" Height="153" Canvas.Left="175" Canvas.Top="228" Width="570" Source="/Assets/gamestart.png" Stretch="Uniform"/>
+            <Image x:Name="gameStartDifLvl" Height="82" Canvas.Left="292" Canvas.Top="340" Width="338" Source="/Assets/difficult.png"/>
+            <Button x:Name="easyBtn" Content="EASY" Canvas.Left="219" Canvas.Top="449" Background="#FF1EE017" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="easyBtn_Click" Height="60" Width="135" VerticalAlignment="Top"/>
+            <Button x:Name="mediumBtn" Content="MEDIUM" Canvas.Left="406" Canvas.Top="449" Background="#FFBFDE07" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="mediumBtn_Click" Height="60" Width="141" VerticalAlignment="Top"/>
+            <TextBlock x:Name="txtBlock" Canvas.Left="1017" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48"/>
+            <TextBlock x:Name="txtBlock1" Canvas.Left="897" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+            <Image x:Name="gameOvetTxt" Height="83" Canvas.Left="250" Width="415" Source="/Assets/gameOver.png" Stretch="Uniform" Canvas.Top="228"/>
+            <Image x:Name="myTitle" Height="43" Canvas.Left="406" Canvas.Top="520" Width="316" Source="/Assets/myGametitle.png"/>
+            <Image x:Name="hangmanTitle" Height="43" Canvas.Left="281" Canvas.Top="218" Width="359" Source="/Assets/HANGMAN.png"/>
+            <Image x:Name="playAgainTitle" Height="43" Canvas.Left="270" Canvas.Top="305" Width="370" Source="/Assets/playAgainTitle.png"/>
+            <Image x:Name="winTitle" Height="45" Canvas.Left="250" Canvas.Top="246" Width="415" Source="/Assets/youWon.png"/>
         </Canvas>
     </Grid>
 </Page>

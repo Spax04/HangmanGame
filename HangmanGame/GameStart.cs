@@ -15,7 +15,6 @@ namespace HangmanGame
         GameMananger gameMananger;
         private char[] _playerWord;
 
-
         public GameStart(int lvlChose)
         {
             result = new StringBuilder();
@@ -35,9 +34,7 @@ namespace HangmanGame
                 _playerWord = mediumWord.Word;
             }
         }
-
-
-        public bool letterCheck(char c, char[] word, ref int num)
+        public bool letterCheck(char c, char[] word /*ref int num*/)
         {
             int count = 0;
             for(int i = 0; i < word.Length; i++)
@@ -48,7 +45,7 @@ namespace HangmanGame
                     count++;
                 }
             }
-            num+=count;
+            //num+=count;
             if(count > 0)
                 return true;
             else

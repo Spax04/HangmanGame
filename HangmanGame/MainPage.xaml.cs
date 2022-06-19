@@ -25,7 +25,7 @@ namespace HangmanGame
     {
         GameStart gameStart;
         GameMananger gameMananger;
-        public int num;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -37,31 +37,35 @@ namespace HangmanGame
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            gameMananger = new GameMananger();
-            gameStart = new GameStart(gameMananger.EasyLvlChose);
-            reultTextBlock.Text = gameStart.Result.ToString();
-            gameMananger.MaxMiss = gameMananger.EasyMissAmount;
-            removeGameOverStuff();
-            addAlphabet();
-            removeStartMenu();
+            creatNewGame(1);
         }
 
         private void mediumBtn_Click(object sender, RoutedEventArgs e)
         {
+            creatNewGame(2);
+        }
+        public void creatNewGame(int num)
+        {
             gameMananger = new GameMananger();
-            gameStart = new GameStart(gameMananger.MediumLvlChose);
-            gameMananger.MaxMiss = gameMananger.MediumMissAmount;
-            gameMananger.WordLength = gameStart.PlayerWord.Length;
-            num = gameMananger.GuessCounter;
+            if(num == 1)
+            {
+                gameStart = new GameStart(gameMananger.EasyLvlChose);
+                gameMananger.MaxMiss = gameMananger.EasyMissAmount;
+            }
+            else if(num == 2)
+            {
+                gameStart = new GameStart(gameMananger.MediumLvlChose);
+                gameMananger.MaxMiss = gameMananger.MediumMissAmount;
+            }
             reultTextBlock.Text = gameStart.Result.ToString();
-
+            gameMananger.WordLength = gameStart.PlayerWord.Length;
             removeHangman();
             removeGameOverStuff();
             addAlphabet();
             removeStartMenu();
+            allBtnEnablet();
         }
-        
-
+        //-------------- Grafic User Interface-------------
         private void removeStartMenu()
         {
             myCanvas.Children.Remove(gameStartDifLvl);
@@ -173,8 +177,35 @@ namespace HangmanGame
             myCanvas.Children.Add(btnY);
             myCanvas.Children.Add(btnZ);
         }
-
-
+        public void allBtnEnablet()
+        {
+            btnA.IsEnabled = true;
+            btnB.IsEnabled = true;
+            btnC.IsEnabled = true;
+            btnD.IsEnabled = true;
+            btnE.IsEnabled = true;
+            btnF.IsEnabled = true;
+            btnG.IsEnabled = true;
+            btnH.IsEnabled = true;
+            btnI.IsEnabled = true;
+            btnJ.IsEnabled = true;
+            btnK.IsEnabled = true;
+            btnL.IsEnabled = true;
+            btnM.IsEnabled = true;
+            btnN.IsEnabled = true;
+            btnO.IsEnabled = true;
+            btnP.IsEnabled = true;
+            btnQ.IsEnabled = true;
+            btnR.IsEnabled = true;
+            btnS.IsEnabled = true;
+            btnT.IsEnabled = true;
+            btnU.IsEnabled = true;
+            btnV.IsEnabled = true;
+            btnW.IsEnabled = true;
+            btnX.IsEnabled = true;
+            btnY.IsEnabled = true;
+            btnZ.IsEnabled = true;
+        }
         public void HangmanDraw(int num)
         {
             if (gameMananger.MaxMiss == gameMananger.EasyMissAmount)
@@ -250,18 +281,23 @@ namespace HangmanGame
                 }
             }
         }
-         // -------------- Buttons --------------
+        //-------------------------------------------
+
+        // -------------- Buttons --------------
         private void btnA_Click(object sender, RoutedEventArgs e) // A 
         {
             btnFuction('A', btnA);
+            
         }  
         private void btnB_Click(object sender, RoutedEventArgs e) // B 
         {
             btnFuction('B', btnB);
+            
         }
         private void btnC_Click(object sender, RoutedEventArgs e) // C 
         {
             btnFuction('C', btnC);
+            
         }
         private void btnD_Click(object sender, RoutedEventArgs e) // D 
         {
@@ -354,11 +390,12 @@ namespace HangmanGame
         private void btnZ_Click(object sender, RoutedEventArgs e) // Z
         {
             btnFuction('Z', btnZ);
+           
         }
         public void btnFuction(char c,Button btn)  // Functon for all btns
         {
-            bool status;
-            status = gameStart.letterCheck(c, gameStart.PlayerWord,ref num);
+            
+            bool status = gameStart.letterCheck(c, gameStart.PlayerWord);
             if(status == false)
             {
                 gameMananger.MissCounter++;
@@ -366,6 +403,7 @@ namespace HangmanGame
                 if (gameMananger.looseCheck())
                 {
                     addGameOverMenu();
+                    removeAlphabet();
                 }
             }
             else if (status == true)
@@ -374,8 +412,9 @@ namespace HangmanGame
                 if (gameMananger.winCheck())
                 {
                     addWinMenu();
+                    
+                    removeAlphabet();
                 }
-                
             }
             reultTextBlock.Text = gameStart.Result.ToString();
 
