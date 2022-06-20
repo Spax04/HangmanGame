@@ -9,8 +9,8 @@ namespace HangmanGame
     public class EasyWord : WordClass
     {
         Random random = new Random();
-        string[] _easyCollectionThree = { "DOG", "CAT", "TEA", "BUG", "SET"}; //Defuelt length = 5;
-        string[] _easyCollectionFour = { "DATE", "MAIL", "SOUP", "LION", "GOAT" }; //Defuelt length = 5;
+        string[] _easyCollectionThree = { "DOG", "CAT", "TEA", "BUG", "SET","SAD","PAN","POT","HAT","HOT","ZIP","BOX","FOX","YOU"}; //Defuelt length = 14;
+        string[] _easyCollectionFour = { "DATE", "MAIL", "SOUP", "LION", "GOAT", "BALL","MAIN","TAXI"}; //Defuelt length = 5;
         private const int _easyLengthThree = 3;
         private const int _easyLengthFour = 4;
         

@@ -394,7 +394,6 @@ namespace HangmanGame
         }
         public void btnFuction(char c,Button btn)  // Functon for all btns
         {
-            
             bool status = gameStart.letterCheck(c, gameStart.PlayerWord);
             if(status == false)
             {
@@ -417,10 +416,8 @@ namespace HangmanGame
                 }
             }
             reultTextBlock.Text = gameStart.Result.ToString();
-
             txtBlock1.Text = gameMananger.GuessCounter.ToString();            
             txtBlock.Text = gameMananger.MissCounter.ToString();
-            btn.IsEnabled = false;
         }
 
 // -------------------------------------------------------------------------------
