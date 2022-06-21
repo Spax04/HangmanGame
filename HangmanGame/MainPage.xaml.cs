@@ -25,7 +25,9 @@ namespace HangmanGame
     {
         GameStart gameStart;
         GameMananger gameMananger;
-        
+        private const int easyLvl = 1;
+        private const int mediumLvl = 2;
+        private const int hardLvl = 3;
 
         public MainPage()
         {
@@ -38,12 +40,16 @@ namespace HangmanGame
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
 
-            creatNewGame(1);
+            creatNewGame(easyLvl);
         }
 
         private void mediumBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame(2);
+            creatNewGame(mediumLvl);
+        }
+        private void hardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            creatNewGame(hardLvl);
         }
         public void creatNewGame(int num)
         {
@@ -58,6 +64,11 @@ namespace HangmanGame
             {
                 gameStart = new GameStart(gameMananger.MediumLvlChose);
                 gameMananger.MaxMiss = gameMananger.MediumMissAmount;
+                gameMananger.WordLength = gameStart.PlayerWord.Length;
+            }else if(num == 3)
+            {
+                gameStart = new GameStart(gameMananger.HardLvlChose);
+                gameMananger.MaxMiss = gameMananger.HardMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
             reultTextBlock.Text = gameStart.Result.ToString();
@@ -75,6 +86,7 @@ namespace HangmanGame
             myCanvas.Children.Remove(gameRec);
             myCanvas.Children.Remove(easyBtn);
             myCanvas.Children.Remove(mediumBtn);
+            myCanvas.Children.Remove(hardBtn);
             myCanvas.Children.Remove(gameStartTitle);
             myCanvas.Children.Remove(hangmanTitle);
             myCanvas.Children.Remove(myTitle);
@@ -88,6 +100,7 @@ namespace HangmanGame
             myCanvas.Children.Add(myTitle);
             myCanvas.Children.Add(easyBtn);
             myCanvas.Children.Add(mediumBtn);
+            myCanvas.Children.Add(hardBtn);
             myCanvas.Children.Add(gameStartDifLvl);
 
         }
@@ -100,6 +113,7 @@ namespace HangmanGame
             myCanvas.Children.Add(myTitle);
             myCanvas.Children.Add(easyBtn);
             myCanvas.Children.Add(mediumBtn);
+            myCanvas.Children.Add(hardBtn);
             myCanvas.Children.Add(gameStartDifLvl);
         }
         public void removeGameOverStuff()
@@ -281,6 +295,41 @@ namespace HangmanGame
                     case 8:
                         myCanvas.Children.Add(missTen);
                         break;
+                    default:
+                        {
+                            break;
+                        }
+                }
+            }
+            else if(gameMananger.MaxMiss == gameMananger.HardMissAmount)
+            {
+                switch (gameMananger.MissCounter)
+                {
+                    case 1:
+                        myCanvas.Children.Add(missOne);
+                        myCanvas.Children.Add(missTwo);
+                        break;
+                    case 2:
+                        myCanvas.Children.Add(missThree);
+                        myCanvas.Children.Add(missThree1);
+                        break;
+                    case 3:
+                        myCanvas.Children.Add(missFour);
+                        myCanvas.Children.Add(missFive);
+                        break;
+                    case 4:
+                        myCanvas.Children.Add(missSix);
+                        myCanvas.Children.Add(missSeven);
+                        break;
+                    case 5:
+                        myCanvas.Children.Add(missEight);
+                        myCanvas.Children.Add(missNine);
+                        break;
+                    case 6:
+                        myCanvas.Children.Add(missTen);
+                        break;
+                    default:
+                        break;
                 }
             }
         }
@@ -421,7 +470,9 @@ namespace HangmanGame
             btn.IsEnabled = false;
         }
 
-// -------------------------------------------------------------------------------
-       
+        
+
+        // -------------------------------------------------------------------------------
+
     }
 }

@@ -189,29 +189,30 @@
                     <CompositeTransform Rotation="-2.734" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="105" Width="336" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="48" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="897" Canvas.Top="125"/>
+            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="347" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="48" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="897" Canvas.Top="119" Text="12345678"/>
             <Rectangle x:Name="missThree" HorizontalAlignment="Left" Height="7" VerticalAlignment="Top" Width="154" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="1091.027" Canvas.Top="327.069">
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="49.693" SkewX="-8.605" ScaleX="0.906" ScaleY="1.103"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Rectangle x:Name="gameRec" HorizontalAlignment="Left" Height="361" VerticalAlignment="Top" Width="670" Fill="#FF258EB1" Canvas.Left="125" Canvas.Top="200" RadiusX="166" RadiusY="166" FocusVisualSecondaryBrush="White" Stroke="Black"/>
+            <Rectangle x:Name="gameRec" HorizontalAlignment="Left" Height="487" VerticalAlignment="Top" Width="834" Fill="#FF258EB1" Canvas.Left="237" Canvas.Top="104" RadiusX="166" RadiusY="166" FocusVisualSecondaryBrush="White" Stroke="Black"/>
             <Rectangle x:Name="missTwo" Height="5" Width="450" Fill="White" Canvas.Left="989.645" Canvas.Top="458.539" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" RadiusX="0" RadiusY="0">
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="90.083" SkewY="0.031" ScaleX="0.853" ScaleY="1.172"/>
                 </Rectangle.RenderTransform>
             </Rectangle>
-            <Image x:Name="gameStartTitle" Height="153" Canvas.Left="175" Canvas.Top="228" Width="570" Source="/Assets/gamestart.png" Stretch="Uniform"/>
-            <Image x:Name="gameStartDifLvl" Height="82" Canvas.Left="292" Canvas.Top="340" Width="338" Source="/Assets/difficult.png"/>
-            <Button x:Name="easyBtn" Content="EASY" Canvas.Left="219" Canvas.Top="449" Background="#FF1EE017" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="easyBtn_Click" Height="60" Width="135" VerticalAlignment="Top"/>
-            <Button x:Name="mediumBtn" Content="MEDIUM" Canvas.Left="406" Canvas.Top="449" Background="#FFBFDE07" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="mediumBtn_Click" Height="60" Width="141" VerticalAlignment="Top"/>
+            <Image x:Name="gameStartTitle" Height="207" Canvas.Left="300" Canvas.Top="141" Width="708" Source="/Assets/gamestart.png" Stretch="Uniform"/>
+            <Image x:Name="gameStartDifLvl" Height="112" Canvas.Left="445" Canvas.Top="292" Width="420" Source="/Assets/difficult.png"/>
+            <Button x:Name="easyBtn" Content="EASY" Canvas.Left="324" Canvas.Top="440" Background="#FF1EE017" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="easyBtn_Click" Height="81" Width="167"/>
+            <Button x:Name="mediumBtn" Content="MEDIUM" Canvas.Left="567" Canvas.Top="440" Background="#FFBFDE07" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Click="mediumBtn_Click" Height="81" Width="176"/>
             <TextBlock x:Name="txtBlock" Canvas.Left="1017" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48"/>
             <TextBlock x:Name="txtBlock1" Canvas.Left="897" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-            <Image x:Name="gameOvetTxt" Height="83" Canvas.Left="250" Width="415" Source="/Assets/gameOver.png" Stretch="Uniform" Canvas.Top="228"/>
-            <Image x:Name="myTitle" Height="43" Canvas.Left="349" Canvas.Top="518" Width="316" Source="/Assets/myGametitle.png"/>
-            <Image x:Name="hangmanTitle" Height="43" Canvas.Left="281" Canvas.Top="218" Width="359" Source="/Assets/HANGMAN.png"/>
-            <Image x:Name="playAgainTitle" Height="43" Canvas.Left="270" Canvas.Top="305" Width="370" Source="/Assets/playAgainTitle.png"/>
-            <Image x:Name="winTitle" Height="45" Canvas.Left="250" Canvas.Top="246" Width="415" Source="/Assets/youWon.png"/>
+            <Image x:Name="gameOvetTxt" Height="97" Canvas.Left="388" Width="477" Source="/Assets/gameOver.png" Stretch="Uniform" Canvas.Top="158"/>
+            <Image x:Name="myTitle" Height="58" Canvas.Left="516" Canvas.Top="533" Width="393" Source="/Assets/myGametitle.png"/>
+            <Image x:Name="hangmanTitle" Height="59" Canvas.Left="431" Canvas.Top="128" Width="446" Source="/Assets/HANGMAN.png"/>
+            <Image x:Name="playAgainTitle" Height="49" Canvas.Left="440" Canvas.Top="253" Width="400" Source="/Assets/playAgainTitle.png"/>
+            <Image x:Name="winTitle" Height="96" Canvas.Left="417" Canvas.Top="136" Width="460" Source="/Assets/youWon.png"/>
+            <Button x:Name="hardBtn" Content="HARD" Canvas.Left="822" Canvas.Top="440" Background="#FFDE1D07" FontFamily="Segoe Print" FontSize="24" Foreground="Black" BorderBrush="Black" Height="81" Width="176" Click="hardBtn_Click"/>
         </Canvas>
     </Grid>
 </Page>

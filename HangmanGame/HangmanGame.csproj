@@ -122,6 +122,7 @@
     <Compile Include="GameMananger.cs" />
     <Compile Include="GameStart.cs" />
     <Compile Include="Levels\EasyWord.cs" />
+    <Compile Include="Levels\HardWord.cs" />
     <Compile Include="Levels\MediumWord.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>

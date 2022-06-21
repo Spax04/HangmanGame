@@ -11,6 +11,7 @@ namespace HangmanGame
         Random random = new Random();
         EasyWord easyWord;
         MediumWord mediumWord;
+        HardWord hardWord;
         StringBuilder result;
         GameMananger gameMananger;
         private char[] _playerWord;
@@ -21,6 +22,7 @@ namespace HangmanGame
             gameMananger = new GameMananger(); //Added to display a lvl Chose
             easyWord = new EasyWord(random.Next(3, 5));
             mediumWord = new MediumWord(random.Next(5, 7));
+            hardWord = new HardWord(random.Next(7, 9));
 
             if(lvlChose == gameMananger.EasyLvlChose)
             {
@@ -32,6 +34,10 @@ namespace HangmanGame
             {
                 result = resultStartSet(mediumWord);
                 _playerWord = mediumWord.Word;
+            }else if(lvlChose == gameMananger.HardLvlChose)
+            {
+                result = resultStartSet(hardWord);
+                _playerWord = hardWord.Word;
             }
         }
         public int letterCheck(char c, char[] word)  //ref numm for counter double chares
