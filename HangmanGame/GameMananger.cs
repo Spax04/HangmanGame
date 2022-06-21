@@ -18,9 +18,9 @@ namespace HangmanGame
         private const int _mediumMissAmount = 8;
         private const int _hardMissAmount = 6; // Working on it
 
-        private int _missCounter;
+        private static int _missCounter;
         private int _maxMiss;
-        private int _guessCounter;
+        private static int _guessCounter;
         private int _wordLength;
         public GameMananger()
         {
@@ -56,7 +56,7 @@ namespace HangmanGame
             else
                 return false;
         }
-       
+
         public int MaxMiss { get{ return _maxMiss; } set { _maxMiss = value; } }
         public int MissCounter { get { return _missCounter; } set { _missCounter = value; }  }
         public int GuessCounter { get { return _guessCounter; } set { _guessCounter = value; } }

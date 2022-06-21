@@ -25,6 +25,7 @@ namespace HangmanGame
     {
         GameStart gameStart;
         GameMananger gameMananger;
+        
 
         public MainPage()
         {
@@ -51,14 +52,16 @@ namespace HangmanGame
             {
                 gameStart = new GameStart(gameMananger.EasyLvlChose);
                 gameMananger.MaxMiss = gameMananger.EasyMissAmount;
+                gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
             else if(num == 2)
             {
                 gameStart = new GameStart(gameMananger.MediumLvlChose);
                 gameMananger.MaxMiss = gameMananger.MediumMissAmount;
+                gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
             reultTextBlock.Text = gameStart.Result.ToString();
-            gameMananger.WordLength = gameStart.PlayerWord.Length;
+            
             removeHangman();
             removeGameOverStuff();
             addAlphabet();
@@ -394,30 +397,28 @@ namespace HangmanGame
         }
         public void btnFuction(char c,Button btn)  // Functon for all btns
         {
-            bool status = gameStart.letterCheck(c, gameStart.PlayerWord);
-            if(status == false)
+            int status = gameStart.letterCheck(c, gameStart.PlayerWord);
+            if(status == 0)
             {
                 gameMananger.MissCounter++;
                 HangmanDraw(gameMananger.MissCounter);
                 if (gameMananger.looseCheck())
                 {
                     addGameOverMenu();
-                    removeAlphabet();
                 }
             }
-            else if (status == true)
+            else if (status > 0)
             {
-                gameMananger.GuessCounter++;
+                gameMananger.GuessCounter += status;
                 if (gameMananger.winCheck())
                 {
                     addWinMenu();
-                    
-                    removeAlphabet();
                 }
             }
             reultTextBlock.Text = gameStart.Result.ToString();
             txtBlock1.Text = gameMananger.GuessCounter.ToString();            
             txtBlock.Text = gameMananger.MissCounter.ToString();
+            btn.IsEnabled = false;
         }
 
 // -------------------------------------------------------------------------------

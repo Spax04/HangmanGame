@@ -34,7 +34,7 @@ namespace HangmanGame
                 _playerWord = mediumWord.Word;
             }
         }
-        public bool letterCheck(char c, char[] word /*ref int num*/)
+        public int letterCheck(char c, char[] word)  //ref numm for counter double chares
         {
             int count = 0;
             for(int i = 0; i < word.Length; i++)
@@ -45,11 +45,8 @@ namespace HangmanGame
                     count++;
                 }
             }
-            //num+=count;
-            if(count > 0)
-                return true;
-            else
-                return false;
+            
+           return count;
         }
         public StringBuilder resultStartSet(WordClass word)
         {
@@ -66,9 +63,9 @@ namespace HangmanGame
                     sb.Append(" ");
                 }
             }
-            
             return sb;
         } 
+
         public char[] PlayerWord { get { return _playerWord; } }
         public StringBuilder Result { get { return result; } }
     }

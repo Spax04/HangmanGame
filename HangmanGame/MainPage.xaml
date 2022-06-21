@@ -208,7 +208,7 @@
             <TextBlock x:Name="txtBlock" Canvas.Left="1017" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48"/>
             <TextBlock x:Name="txtBlock1" Canvas.Left="897" TextWrapping="Wrap" Text="1" Canvas.Top="35" Height="90" Width="65" FontSize="48" HorizontalAlignment="Left" VerticalAlignment="Top"/>
             <Image x:Name="gameOvetTxt" Height="83" Canvas.Left="250" Width="415" Source="/Assets/gameOver.png" Stretch="Uniform" Canvas.Top="228"/>
-            <Image x:Name="myTitle" Height="43" Canvas.Left="406" Canvas.Top="520" Width="316" Source="/Assets/myGametitle.png"/>
+            <Image x:Name="myTitle" Height="43" Canvas.Left="349" Canvas.Top="518" Width="316" Source="/Assets/myGametitle.png"/>
             <Image x:Name="hangmanTitle" Height="43" Canvas.Left="281" Canvas.Top="218" Width="359" Source="/Assets/HANGMAN.png"/>
             <Image x:Name="playAgainTitle" Height="43" Canvas.Left="270" Canvas.Top="305" Width="370" Source="/Assets/playAgainTitle.png"/>
             <Image x:Name="winTitle" Height="45" Canvas.Left="250" Canvas.Top="246" Width="415" Source="/Assets/youWon.png"/>
