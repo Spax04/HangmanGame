@@ -24,6 +24,7 @@ namespace HangmanGame
     public sealed partial class MainPage : Page
     {
         GameStart gameStart;
+        private enum LevelChose  {easyLvl,mediumLvl,hardLvl };
         GameMananger gameMananger;
         private const int easyLvl = 1;
         private const int mediumLvl = 2;
@@ -36,36 +37,33 @@ namespace HangmanGame
             removeAlphabet();
             removeHangman();
         }
-
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
-
-            creatNewGame(easyLvl);
+            creatNewGame((int)LevelChose.easyLvl);
         }
-
         private void mediumBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame(mediumLvl);
+            creatNewGame((int)LevelChose.mediumLvl);
         }
         private void hardBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame(hardLvl);
+            creatNewGame((int)LevelChose.hardLvl);
         }
         public void creatNewGame(int num)
         {
             gameMananger = new GameMananger();
-            if(num == 1)
+            if(num == 0)
             {
                 gameStart = new GameStart(gameMananger.EasyLvlChose);
                 gameMananger.MaxMiss = gameMananger.EasyMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
-            else if(num == 2)
+            else if(num == 1)
             {
                 gameStart = new GameStart(gameMananger.MediumLvlChose);
                 gameMananger.MaxMiss = gameMananger.MediumMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
-            }else if(num == 3)
+            }else if(num == 2)
             {
                 gameStart = new GameStart(gameMananger.HardLvlChose);
                 gameMananger.MaxMiss = gameMananger.HardMissAmount;
@@ -225,7 +223,7 @@ namespace HangmanGame
         }
         public void HangmanDraw(int num)
         {
-            if (gameMananger.MaxMiss == gameMananger.EasyMissAmount)
+            if (gameMananger.MaxMiss == gameMananger.HardMissAmount)
             {
                 switch (num)
                 {
@@ -301,7 +299,7 @@ namespace HangmanGame
                         }
                 }
             }
-            else if(gameMananger.MaxMiss == gameMananger.HardMissAmount)
+            else if(gameMananger.MaxMiss == gameMananger.EasyMissAmount)
             {
                 switch (gameMananger.MissCounter)
                 {
@@ -336,118 +334,13 @@ namespace HangmanGame
         //-------------------------------------------
 
         // -------------- Buttons --------------
-        private void btnA_Click(object sender, RoutedEventArgs e) // A 
+        private void btn_Click(object sender, RoutedEventArgs e)
         {
-            btnFuction('A', btnA);
-            
-        }  
-        private void btnB_Click(object sender, RoutedEventArgs e) // B 
-        {
-            btnFuction('B', btnB);
-            
-        }
-        private void btnC_Click(object sender, RoutedEventArgs e) // C 
-        {
-            btnFuction('C', btnC);
-            
-        }
-        private void btnD_Click(object sender, RoutedEventArgs e) // D 
-        {
-            btnFuction('D', btnD);
-        }
-        private void btnE_Click(object sender, RoutedEventArgs e) // E 
-        {
-            btnFuction('E',btnE);
-        }
-        private void btnF_Click(object sender, RoutedEventArgs e) // F 
-        {
-            btnFuction('F', btnF);
-        }
-        private void btnG_Click(object sender, RoutedEventArgs e) // G 
-        {
-            btnFuction('G', btnG);
-        }
-        private void btnH_Click(object sender, RoutedEventArgs e) // H 
-        {
-            btnFuction('H', btnH);
-        }
-        private void btnI_Click(object sender, RoutedEventArgs e) // I 
-        {
-            btnFuction('I', btnI);
-        }
-        private void btnJ_Click(object sender, RoutedEventArgs e) // J 
-        {
-            btnFuction('J', btnJ);
-        }
-        private void btnK_Click(object sender, RoutedEventArgs e) // K 
-        {
-            btnFuction('K', btnK);
-        }
-        private void btnL_Click(object sender, RoutedEventArgs e) // L 
-        {
-            btnFuction('L', btnL);
-        }
-        private void btnM_Click(object sender, RoutedEventArgs e) // M 
-        {
-            btnFuction('M', btnM);
-        }
-        private void btnN_Click(object sender, RoutedEventArgs e) // N 
-        {
-            btnFuction('N', btnN);
-        }
-        private void btnO_Click(object sender, RoutedEventArgs e) // O
-        {
-            btnFuction('O', btnO);
-        }
-        private void btnP_Click(object sender, RoutedEventArgs e) // P 
-        {
-            btnFuction('P', btnP);
-        }
-        private void btnQ_Click(object sender, RoutedEventArgs e) // Q 
-        {
-            btnFuction('Q', btnQ);
-        }
-        private void btnR_Click(object sender, RoutedEventArgs e) // R 
-        {
-            btnFuction('R', btnR);
-        }
-        private void btnS_Click(object sender, RoutedEventArgs e) // S 
-        {
-            btnFuction('S', btnS);
-        }
-        private void btnT_Click(object sender, RoutedEventArgs e) // T 
-        {
-            btnFuction('T', btnT);
-        }
-        private void btnU_Click(object sender, RoutedEventArgs e) // U 
-        {
-            btnFuction('U', btnU);
-        }
-        private void btnV_Click(object sender, RoutedEventArgs e) // V 
-        {
-            btnFuction('V', btnV);
-        }
-        private void btnW_Click(object sender, RoutedEventArgs e) // W 
-        {
-            btnFuction('W', btnW);
-        }
-        private void btnX_Click(object sender, RoutedEventArgs e) // X
-        {
-            btnFuction('X', btnX);
-        }
-        private void btnY_Click(object sender, RoutedEventArgs e) // Y
-        {
-            btnFuction('Y', btnY);
-        }
-        private void btnZ_Click(object sender, RoutedEventArgs e) // Z
-        {
-            btnFuction('Z', btnZ);
-           
-        }
-        public void btnFuction(char c,Button btn)  // Functon for all btns
-        {
+            Button button = sender as Button;
+            string s = button.Content.ToString();
+            char c = Convert.ToChar(s);
             int status = gameStart.letterCheck(c, gameStart.PlayerWord);
-            if(status == 0)
+            if (status == 0)
             {
                 gameMananger.MissCounter++;
                 HangmanDraw(gameMananger.MissCounter);
@@ -465,13 +358,8 @@ namespace HangmanGame
                 }
             }
             reultTextBlock.Text = gameStart.Result.ToString();
-            txtBlock1.Text = gameMananger.GuessCounter.ToString();            
-            txtBlock.Text = gameMananger.MissCounter.ToString();
-            btn.IsEnabled = false;
+            button.IsEnabled = false;
         }
-
-        
-
         // -------------------------------------------------------------------------------
 
     }

@@ -12,11 +12,11 @@ namespace HangmanGame
         //Levels
         private const int _easyLvlChose = 1;
         private const int _mediumLvlChose = 2;
-        private const int _hardLvlChose = 3; // Working on it
+        private const int _hardLvlChose = 3; 
         //Missing amount
-        private const int _easyMissAmount = 10;
+        private const int _easyMissAmount = 6;
         private const int _mediumMissAmount = 8;
-        private const int _hardMissAmount = 6; // Working on it
+        private const int _hardMissAmount = 10; 
 
         private static int _missCounter;
         private int _maxMiss;

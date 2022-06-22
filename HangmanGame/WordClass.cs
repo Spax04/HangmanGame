@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HangmanGame
 {
-    public class WordClass
+    public abstract class WordClass
     {
         
 
@@ -18,8 +18,8 @@ namespace HangmanGame
             this.maxWordLength = maxWordLength;
             _word = new char[maxWordLength];
         }
-       
-        public void addCharToWord(string word) // User shold adds the word into parameter by CAPS. Example: HOME, WORD,DOG e.t.
+
+        public  void addCharToWord(string word) // User shold adds the word into parameter by CAPS. Example: HOME, WORD,DOG e.t.
         {
             word.ToUpper();
             if(word.Length == maxWordLength)
@@ -28,7 +28,7 @@ namespace HangmanGame
                 {
                     _word[i] = word[i];
                 }
-            }
+}
         }
 
         public char[] Word { get { return _word; } set { _word = value; } }// Delite???
