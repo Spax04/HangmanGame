@@ -325,7 +325,7 @@ namespace HangmanGame
         }
         //-------------------------------------------
 
-        // -------------- Buttons --------------
+        // -------------- Button --------------
         private void btn_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
@@ -349,11 +349,10 @@ namespace HangmanGame
                     addWinMenu();
                 }
             }
-            
             reultTextBlock.Text = gameStart.Result.ToString();
             button.IsEnabled = false;
         }
-        // -------------------------------------------------------------------------------
+        // ---------------------------------------------------------
 
     }
 }

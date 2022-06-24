@@ -9,8 +9,6 @@ namespace HangmanGame
 {
     public abstract class WordClass
     {
-        
-
         private char[] _word;
         private readonly int maxWordLength;
         public WordClass(int maxWordLength)
@@ -28,13 +26,8 @@ namespace HangmanGame
                 {
                     _word[i] = word[i];
                 }
-}
+            }
         }
-
         public char[] Word { get { return _word; } set { _word = value; } }// Delite???
- 
-    
-
-        public int Length { get; internal set; }
     }
 }
