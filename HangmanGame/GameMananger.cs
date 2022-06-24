@@ -9,10 +9,7 @@ namespace HangmanGame
 {
     internal class GameMananger
     {
-        //Levels
-        private const int _easyLvlChose = 1;
-        private const int _mediumLvlChose = 2;
-        private const int _hardLvlChose = 3; 
+       
         //Missing amount
         private const int _easyMissAmount = 6;
         private const int _mediumMissAmount = 8;
@@ -27,19 +24,6 @@ namespace HangmanGame
             _guessCounter = 0;
             _missCounter = 0;
         }
-
-        /*public bool missCounterMethod(bool status)
-        {
-            if(status == false)
-            {
-                _missCounter++;
-            }
-            if(_missCounter == _maxMiss) //Game Over Checking
-            {
-                return true;
-            }
-            return false;
-        }*/
 
         public bool winCheck()
         {
@@ -62,10 +46,7 @@ namespace HangmanGame
         public int GuessCounter { get { return _guessCounter; } set { _guessCounter = value; } }
         public int WordLength { get { return _wordLength; } set { _wordLength = value; } }
 
-        public int EasyLvlChose { get { return _easyLvlChose; } }
-        public int MediumLvlChose { get { return _mediumLvlChose; } }
-        public int HardLvlChose { get { return _hardLvlChose; } } // Working on it
-
+      
         public int EasyMissAmount { get { return _easyMissAmount; } }
         public int MediumMissAmount { get { return _mediumMissAmount; } }
         public int HardMissAmount { get { return _hardMissAmount; } } // Working on it

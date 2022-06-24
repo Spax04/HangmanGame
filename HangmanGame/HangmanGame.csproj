@@ -119,6 +119,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="LevelChoses.cs" />
     <Compile Include="GameMananger.cs" />
     <Compile Include="GameStart.cs" />
     <Compile Include="Levels\EasyWord.cs" />

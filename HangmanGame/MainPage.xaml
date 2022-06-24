@@ -79,17 +79,17 @@
                     <CompositeTransform Rotation="4.131" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="btnE" Margin="662,97,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="E" Click="btn_Click">
+            <Button x:Name="btnE"  Margin="662,97,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="E" Click="btn_Click">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="4.131" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="btnF" Margin="777,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="F" Click="btn_Click">
+            <Button x:Name="btnF"  Margin="777,92,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="F" Click="btn_Click">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="-0.815" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <Button x:Name="btnG" Margin="102,222,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="G" Click="btn_Click">
+            <Button x:Name="btnG"  Margin="102,222,0,0" Height="95" Width="102" FontSize="60" FontFamily="Segoe Print" RenderTransformOrigin="0.516,-0.001" Foreground="White" BorderBrush="White" Background="#00000000" UseLayoutRounding="False" Padding="0,0,0,0" VerticalAlignment="Top" Content="G" Click="btn_Click">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="-6.138" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
@@ -189,7 +189,7 @@
                     <CompositeTransform Rotation="-2.734" TranslateX="0.764" TranslateY="0.094"/>
                 </Button.RenderTransform>
             </Button>
-            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Top" Height="105" Width="347" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="48" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="897" Canvas.Top="119"/>
+            <TextBlock x:Name="reultTextBlock" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Center" Height="105" Width="569" RenderTransformOrigin="0.499,0.525" Foreground="White" FontSize="48" FontFamily="Segoe Script" LineHeight="20" TextAlignment="Center" Canvas.Left="897" Canvas.Top="119"/>
             <Rectangle x:Name="missThree" HorizontalAlignment="Left" Height="7" VerticalAlignment="Top" Width="154" Fill="White" FocusVisualPrimaryBrush="#FFFBFBFB" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Left="1091.027" Canvas.Top="327.069">
                 <Rectangle.RenderTransform>
                     <CompositeTransform Rotation="49.693" SkewX="-8.605" ScaleX="0.906" ScaleY="1.103"/>

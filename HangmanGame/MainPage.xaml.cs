@@ -18,18 +18,10 @@ using Windows.UI.Popups;
 
 namespace HangmanGame
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         GameStart gameStart;
-        private enum LevelChose  {easyLvl,mediumLvl,hardLvl };
         GameMananger gameMananger;
-        private const int easyLvl = 1;
-        private const int mediumLvl = 2;
-        private const int hardLvl = 3;
-
         public MainPage()
         {
             this.InitializeComponent();
@@ -39,33 +31,33 @@ namespace HangmanGame
         }
         private void easyBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame((int)LevelChose.easyLvl);
+            creatNewGame(LevelChoses.easyLvl);
         }
         private void mediumBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame((int)LevelChose.mediumLvl);
+            creatNewGame(LevelChoses.mediumLvl);
         }
         private void hardBtn_Click(object sender, RoutedEventArgs e)
         {
-            creatNewGame((int)LevelChose.hardLvl);
+            creatNewGame(LevelChoses.hardLvl);
         }
-        public void creatNewGame(int num)
+        public void creatNewGame(LevelChoses lvl)
         {
             gameMananger = new GameMananger();
-            if(num == 0)
+            if(lvl == LevelChoses.easyLvl)
             {
-                gameStart = new GameStart(gameMananger.EasyLvlChose);
+                gameStart = new GameStart(LevelChoses.easyLvl);
                 gameMananger.MaxMiss = gameMananger.EasyMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
-            else if(num == 1)
+            else if(lvl == LevelChoses.mediumLvl)
             {
-                gameStart = new GameStart(gameMananger.MediumLvlChose);
+                gameStart = new GameStart(LevelChoses.mediumLvl);
                 gameMananger.MaxMiss = gameMananger.MediumMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
-            }else if(num == 2)
+            }else if(lvl == LevelChoses.hardLvl)
             {
-                gameStart = new GameStart(gameMananger.HardLvlChose);
+                gameStart = new GameStart(LevelChoses.hardLvl);
                 gameMananger.MaxMiss = gameMananger.HardMissAmount;
                 gameMananger.WordLength = gameStart.PlayerWord.Length;
             }
@@ -357,6 +349,7 @@ namespace HangmanGame
                     addWinMenu();
                 }
             }
+            
             reultTextBlock.Text = gameStart.Result.ToString();
             button.IsEnabled = false;
         }

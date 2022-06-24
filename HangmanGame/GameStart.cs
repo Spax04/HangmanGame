@@ -16,7 +16,7 @@ namespace HangmanGame
         GameMananger gameMananger;
         private char[] _playerWord;
 
-        public GameStart(int lvlChose)
+        public GameStart(LevelChoses ls)
         {
             result = new StringBuilder();
             gameMananger = new GameMananger(); //Added to display a lvl Chose
@@ -24,17 +24,17 @@ namespace HangmanGame
             mediumWord = new MediumWord(random.Next(5, 7));
             hardWord = new HardWord(random.Next(7, 9));
 
-            if(lvlChose == gameMananger.EasyLvlChose)
+            if(ls == LevelChoses.easyLvl)
             {
                 result = resultStartSet(easyWord);
                 _playerWord = easyWord.Word;
                  
             }
-            else if(lvlChose == gameMananger.MediumLvlChose)
+            else if(ls == LevelChoses.mediumLvl)
             {
                 result = resultStartSet(mediumWord);
                 _playerWord = mediumWord.Word;
-            }else if(lvlChose == gameMananger.HardLvlChose)
+            }else if(ls == LevelChoses.hardLvl)
             {
                 result = resultStartSet(hardWord);
                 _playerWord = hardWord.Word;
@@ -71,7 +71,7 @@ namespace HangmanGame
             }
             return sb;
         } 
-
+        
         public char[] PlayerWord { get { return _playerWord; } }
         public StringBuilder Result { get { return result; } }
     }
