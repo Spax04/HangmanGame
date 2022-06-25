@@ -29,18 +29,7 @@ namespace HangmanGame
             removeAlphabet();
             removeHangman();
         }
-        private void easyBtn_Click(object sender, RoutedEventArgs e)
-        {
-            creatNewGame(LevelChoses.easyLvl);
-        }
-        private void mediumBtn_Click(object sender, RoutedEventArgs e)
-        {
-            creatNewGame(LevelChoses.mediumLvl);
-        }
-        private void hardBtn_Click(object sender, RoutedEventArgs e)
-        {
-            creatNewGame(LevelChoses.hardLvl);
-        }
+       
         public void creatNewGame(LevelChoses lvl)
         {
             gameMananger = new GameMananger();
@@ -325,7 +314,7 @@ namespace HangmanGame
         }
         //-------------------------------------------
 
-        // -------------- Button --------------
+        // -------------- Buttons --------------
         private void btn_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
@@ -352,7 +341,19 @@ namespace HangmanGame
             reultTextBlock.Text = gameStart.Result.ToString();
             button.IsEnabled = false;
         }
-        // ---------------------------------------------------------
+        private void easyBtn_Click(object sender, RoutedEventArgs e)
+        {
+            creatNewGame(LevelChoses.easyLvl);
+        }
+        private void mediumBtn_Click(object sender, RoutedEventArgs e)
+        {
+            creatNewGame(LevelChoses.mediumLvl);
+        }
+        private void hardBtn_Click(object sender, RoutedEventArgs e)
+        {
+            creatNewGame(LevelChoses.hardLvl);
+        }
+        // -------------------------------------
 
     }
 }
